@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Docutain_SDK_Example_.NET_MAUI.DataResultPage"
+             Title="DataResultPage">
+    <ContentPage.Content>
+        <Grid>
+            <ScrollView x:Name="ScrollView" Padding="16" IsVisible="false">
+                <StackLayout>
+                    <Label x:Name="Name1Label" Text="Name 1" FontSize="13" TextColor="Gray"/>
+                    <Label x:Name="Name1Entry" Margin="0,0,0,16"/>
+                    <Label x:Name="Name2Label" Text="Name 2" FontSize="13" TextColor="Gray"/>
+                    <Label x:Name="Name2Entry" Margin="0,0,0,16"/>
+                    <Label x:Name="Name3Label" Text="Name 3" FontSize="13" TextColor="Gray"/>
+                    <Label x:Name="Name3Entry" Margin="0,0,0,16"/>
+                    <Label x:Name="ZipCodeLabel" Text="Zip Code" FontSize="13" TextColor="Gray"/>
+                    <Label x:Name="ZipCodeEntry" Margin="0,0,0,16"/>
+                    <Label x:Name="CityLabel" Text="City" FontSize="13" TextColor="Gray"/>
+                    <Label x:Name="CityEntry" Margin="0,0,0,16"/>
+                    <Label x:Name="StreetLabel" Text="Street" FontSize="13" TextColor="Gray"/>
+                    <Label x:Name="StreetEntry" Margin="0,0,0,16"/>
+                    <Label x:Name="PhoneLabel" Text="Phone" FontSize="13" TextColor="Gray"/>
+                    <Label x:Name="PhoneEntry" Margin="0,0,0,16"/>
+                    <Label x:Name="CustomerIDLabel" Text="Customer ID" FontSize="13" TextColor="Gray"/>
+                    <Label x:Name="CustomerIdEntry" Margin="0,0,0,16"/>
+                    <Label x:Name="IbanLabel" Text="IBAN" FontSize="13" TextColor="Gray"/>
+                    <Label x:Name="IbanEntry" Margin="0,0,0,16"/>
+                    <Label x:Name="BicLabel" Text="BIC" FontSize="13" TextColor="Gray"/>
+                    <Label x:Name="BicEntry" Margin="0,0,0,16"/>
+                    <Label x:Name="DateLabel" Text="Date" FontSize="13" TextColor="Gray"/>
+                    <Label x:Name="DateEntry" Margin="0,0,0,16"/>
+                    <Label x:Name="AmountLabel" Text="Amount" FontSize="13" TextColor="Gray"/>
+                    <Label x:Name="AmountEntry" Margin="0,0,0,16"/>
+                    <Label x:Name="InvoiceIdLabel" Text="Invoice ID" FontSize="13" TextColor="Gray"/>
+                    <Label x:Name="InvoiceIdEntry" Margin="0,0,0,16"/>
+                    <Label x:Name="ReferenceLabel" Text="Reference" FontSize="13" TextColor="Gray"/>
+                    <Label x:Name="ReferenceEntry" Margin="0,0,0,16"/>
+                    <Label x:Name="PaymentStateLabel" Text="Payment State" FontSize="13" TextColor="Gray"/>
+                    <Label x:Name="PaymentStateEntry"/>
+                </StackLayout>
+            </ScrollView>
+
+            <ActivityIndicator x:Name="activityIndicator"
+                IsRunning="True"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="CenterAndExpand"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

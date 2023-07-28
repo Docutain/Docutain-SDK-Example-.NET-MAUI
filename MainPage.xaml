@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Docutain_SDK_Example_.NET_MAUI"
+             x:Class="Docutain_SDK_Example_.NET_MAUI.MainPage"
+             Title="Docutain SDK Example">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <local:ThemeImageSrcConverter x:Key="ThemeToImgSrc" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ListView x:Name="lv_Actions"
+            HasUnevenRows="true"
+            SelectionMode="None" >
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <Grid Padding="16"
+                            ColumnSpacing="16">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="36" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+
+                        <Image Source="{Binding ImgSrc, Converter={StaticResource ThemeToImgSrc}}"                           
+                               Grid.Row="0"
+                               Grid.Column="0"
+                               Grid.RowSpan="2"/>
+                        <Label Text="{Binding Header}"
+                               FontAttributes="Bold"
+                               FontSize="Body"                               
+                               Grid.Row="0"
+                               Grid.Column="1"
+                               />
+                        <Label Text="{Binding Description}"
+                               FontSize="Default"
+                               LineBreakMode="WordWrap"
+                               Grid.Row="1"
+                               Grid.Column="1"
+                               />
+                    </Grid>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>

@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31611.283
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Docutain-SDK-Example-.NET-MAUI", "Docutain-SDK-Example-.NET-MAUI.csproj", "{5FF5B2B9-9AB9-43BE-9D04-4CB1CC67ABD8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|ARM32 = Debug|ARM32
+		Release|Any CPU = Release|Any CPU
+		Release|ARM32 = Release|ARM32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5FF5B2B9-9AB9-43BE-9D04-4CB1CC67ABD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FF5B2B9-9AB9-43BE-9D04-4CB1CC67ABD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FF5B2B9-9AB9-43BE-9D04-4CB1CC67ABD8}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{5FF5B2B9-9AB9-43BE-9D04-4CB1CC67ABD8}.Debug|ARM32.ActiveCfg = Debug|ARM32
+		{5FF5B2B9-9AB9-43BE-9D04-4CB1CC67ABD8}.Debug|ARM32.Build.0 = Debug|ARM32
+		{5FF5B2B9-9AB9-43BE-9D04-4CB1CC67ABD8}.Debug|ARM32.Deploy.0 = Debug|ARM32
+		{5FF5B2B9-9AB9-43BE-9D04-4CB1CC67ABD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FF5B2B9-9AB9-43BE-9D04-4CB1CC67ABD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FF5B2B9-9AB9-43BE-9D04-4CB1CC67ABD8}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{5FF5B2B9-9AB9-43BE-9D04-4CB1CC67ABD8}.Release|ARM32.ActiveCfg = Release|ARM32
+		{5FF5B2B9-9AB9-43BE-9D04-4CB1CC67ABD8}.Release|ARM32.Build.0 = Release|ARM32
+		{5FF5B2B9-9AB9-43BE-9D04-4CB1CC67ABD8}.Release|ARM32.Deploy.0 = Release|ARM32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {61F7FB11-1E47-470C-91E2-47F8143E1572}
+	EndGlobalSection
+EndGlobal

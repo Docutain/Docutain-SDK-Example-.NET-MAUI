@@ -15,7 +15,7 @@ It contains modules which are individually licensable.
 
 For more details visit our website https://sdk.Docutain.com
 
-Check our our blog article on [.NET MAUI vs Xamarin](https://sdk.docutain.com/Blogartikel/Xamarin-Versus-NET-MAUI)
+Check out our blog article on [.NET MAUI vs Xamarin](https://sdk.docutain.com/Blogartikel/Xamarin-Versus-NET-MAUI)
 
 ## Documentation of the Docutain SDK
 

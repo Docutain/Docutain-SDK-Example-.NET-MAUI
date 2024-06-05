@@ -9,7 +9,11 @@
         <Setter Property="WidthRequest" Value="48"/>
         <Setter Property="HeightRequest" Value="48"/>
     </Style>
-
+    
+    <Style TargetType="Button">
+        <Setter Property="BorderColor" Value="{AppThemeBinding Light={StaticResource TextColor}, Dark={StaticResource TextColorDark}}"/>
+    </Style>
+    
     <Style TargetType="Editor">
         <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource TextColor}, Dark={StaticResource TextColorDark}}"/>
         <Setter Property="PlaceholderColor" Value="{AppThemeBinding Light={StaticResource placeholderColor}, Dark={StaticResource placeholderColorDark}}"/>

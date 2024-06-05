@@ -117,88 +117,373 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AllowCaptureModeSetting" xml:space="preserve">
+    <value>AllowCaptureModeSetting</value>
+  </data>
+  <data name="AllowCaptureModeSetting_Description" xml:space="preserve">
+    <value>If true, the document scanner toolbar will display an item that allows the user to switch between automatic and manual camera triggering.</value>
+  </data>
+  <data name="AllowPageArrangement" xml:space="preserve">
+    <value>AllowPageArrangement</value>
+  </data>
+  <data name="AllowPageArrangement_Description" xml:space="preserve">
+    <value>If false, the bottom toolbar will hide the arrange page item.</value>
+  </data>
+  <data name="AllowPageCropping" xml:space="preserve">
+    <value>AllowPageCropping</value>
+  </data>
+  <data name="AllowPageCropping_Description" xml:space="preserve">
+    <value>If false, the bottom toolbar will hide the page cropping item.</value>
+  </data>
+  <data name="AllowPageFilter" xml:space="preserve">
+    <value>AllowPageFilter</value>
+  </data>
+  <data name="AllowPageFilter_Description" xml:space="preserve">
+    <value>If false, the bottom toolbar will hide the filter page item.</value>
+  </data>
+  <data name="AllowPageRotation" xml:space="preserve">
+    <value>AllowPageRotation</value>
+  </data>
+  <data name="AllowPageRotation_Description" xml:space="preserve">
+    <value>If false, the bottom toolbar will hide the rotate page item.</value>
+  </data>
   <data name="amount_hint" xml:space="preserve">
     <value>Amount</value>
+  </data>
+  <data name="amount_hint1" xml:space="preserve">
+    <value>Amount</value>
+  </data>
+  <data name="AutoCapture" xml:space="preserve">
+    <value>AutoCapture</value>
+  </data>
+  <data name="AutoCapture_Description" xml:space="preserve">
+    <value>If true, the camera will capture the image automatically at the right moment.</value>
+  </data>
+  <data name="AutoCrop" xml:space="preserve">
+    <value>AutoCrop</value>
+  </data>
+  <data name="AutoCrop_Description" xml:space="preserve">
+    <value>If true, image gets automatically cropped if document was detected. This applies only when importing images.</value>
+  </data>
+  <data name="automaticCapture" xml:space="preserve">
+    <value>Automatic capture</value>
   </data>
   <data name="BIC_hint" xml:space="preserve">
     <value>BIC</value>
   </data>
+  <data name="BIC_hint1" xml:space="preserve">
+    <value>BIC</value>
+  </data>
+  <data name="bottomBarBackground" xml:space="preserve">
+    <value>Bottom bar background</value>
+  </data>
+  <data name="bottomBarForeground" xml:space="preserve">
+    <value>Bottom bar foreground</value>
+  </data>
   <data name="city_hint" xml:space="preserve">
     <value>City</value>
   </data>
+  <data name="city_hint1" xml:space="preserve">
+    <value>City</value>
+  </data>
+  <data name="ColorBottomBarBackground" xml:space="preserve">
+    <value>ColorBottomBarBackground</value>
+  </data>
+  <data name="ColorBottomBarBackground_Description" xml:space="preserve">
+    <value>Used to tint the bottom toolbar background of the image editing page.</value>
+  </data>
+  <data name="ColorBottomBarForeground" xml:space="preserve">
+    <value>ColorBottomBarForeground</value>
+  </data>
+  <data name="ColorBottomBarForeground_Description" xml:space="preserve">
+    <value>Used to tint the buttons within the bottom toolbar of the image editing page.</value>
+  </data>
+  <data name="ColorOnSecondary" xml:space="preserve">
+    <value>ColorOnSecondary</value>
+  </data>
+  <data name="ColorOnSecondary_Description" xml:space="preserve">
+    <value>Used to tint elements that reside on ColorSecondary, like the icon of the capture button.</value>
+  </data>
+  <data name="ColorPrimary" xml:space="preserve">
+    <value>ColorPrimary</value>
+  </data>
+  <data name="ColorPrimary_Description" xml:space="preserve">
+    <value>Used to tint progress indicators and dialog buttons.</value>
+  </data>
+  <data name="ColorScanButtonsForeground" xml:space="preserve">
+    <value>ColorScanButtonsForeground</value>
+  </data>
+  <data name="ColorScanButtonsForeground_Description" xml:space="preserve">
+    <value>Used to tint the foreground of the buttons of the scan layout, like the torch button.</value>
+  </data>
+  <data name="ColorScanButtonsLayoutBackground" xml:space="preserve">
+    <value>ColorScanButtonsLayoutBackground</value>
+  </data>
+  <data name="ColorScanButtonsLayoutBackground_Description" xml:space="preserve">
+    <value>Used to tint the background of the layout containing the buttons of the scan layout, like the capture button or torch button.</value>
+  </data>
+  <data name="ColorScanPolygon" xml:space="preserve">
+    <value>ColorScanPolygon</value>
+  </data>
+  <data name="ColorScanPolygon_Description" xml:space="preserve">
+    <value>Used to tint the polygon overlay which highlights the currently detected document.</value>
+  </data>
+  <data name="ColorSecondary" xml:space="preserve">
+    <value>ColorSecondary</value>
+  </data>
+  <data name="ColorSecondary_Description" xml:space="preserve">
+    <value>Used to tint selectable controls and the capture button.</value>
+  </data>
+  <data name="colorSettings" xml:space="preserve">
+    <value>Color settings</value>
+  </data>
+  <data name="ColorTopBarBackground" xml:space="preserve">
+    <value>ColorTopBarBackground</value>
+  </data>
+  <data name="ColorTopBarBackground_Description" xml:space="preserve">
+    <value>Used to tint the top toolbar background.</value>
+  </data>
+  <data name="ColorTopBarForeground" xml:space="preserve">
+    <value>ColorTopBarForeground</value>
+  </data>
+  <data name="ColorTopBarForeground_Description" xml:space="preserve">
+    <value>Used to tint the elements contained in the top toolbar, like buttons and titles.</value>
+  </data>
+  <data name="cropImportedImages" xml:space="preserve">
+    <value>Crop imported images</value>
+  </data>
   <data name="customerId_hint" xml:space="preserve">
+    <value>Customer ID</value>
+  </data>
+  <data name="customerId_hint1" xml:space="preserve">
     <value>Customer ID</value>
   </data>
   <data name="data extraction" xml:space="preserve">
     <value>Data Extraction</value>
   </data>
+  <data name="data extraction1" xml:space="preserve">
+    <value>Data Extraction</value>
+  </data>
   <data name="dataExtractDesc" xml:space="preserve">
+    <value>Extract data, e.g. invoice data, from a previously scanned or imported (PDF or Image) document.</value>
+  </data>
+  <data name="dataExtractDesc1" xml:space="preserve">
     <value>Extract data, e.g. invoice data, from a previously scanned or imported (PDF or Image) document.</value>
   </data>
   <data name="date_hint" xml:space="preserve">
     <value>Date</value>
   </data>
+  <data name="date_hint1" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="DefaultScanFilter" xml:space="preserve">
+    <value>DefaultScanFilter</value>
+  </data>
+  <data name="DefaultScanFilter_Description" xml:space="preserve">
+    <value>The default scan filter that will be used after scan.</value>
+  </data>
   <data name="docScannerDesc" xml:space="preserve">
+    <value>Starts the document scanner which provides automatic scanning of paper documents.</value>
+  </data>
+  <data name="docScannerDesc1" xml:space="preserve">
     <value>Starts the document scanner which provides automatic scanning of paper documents.</value>
   </data>
   <data name="document scanner" xml:space="preserve">
     <value>Document Scanner</value>
   </data>
+  <data name="document scanner1" xml:space="preserve">
+    <value>Document Scanner</value>
+  </data>
+  <data name="editSettings" xml:space="preserve">
+    <value>Edit settings</value>
+  </data>
   <data name="generate pdf" xml:space="preserve">
+    <value>Generate PDF Document</value>
+  </data>
+  <data name="generate pdf1" xml:space="preserve">
     <value>Generate PDF Document</value>
   </data>
   <data name="generatePDFDesc" xml:space="preserve">
     <value>Generate a searchable (includes recognized text) PDF document out of the scanned pages or imported image.</value>
   </data>
+  <data name="generatePDFDesc1" xml:space="preserve">
+    <value>Generate a searchable (includes recognized text) PDF document out of the scanned pages or imported image.</value>
+  </data>
   <data name="IBAN_hint" xml:space="preserve">
+    <value>IBAN</value>
+  </data>
+  <data name="IBAN_hint1" xml:space="preserve">
     <value>IBAN</value>
   </data>
   <data name="input_option_image" xml:space="preserve">
     <value>Image Import</value>
   </data>
+  <data name="input_option_image1" xml:space="preserve">
+    <value>Image Import</value>
+  </data>
   <data name="input_option_PDF" xml:space="preserve">
+    <value>PDF Import</value>
+  </data>
+  <data name="input_option_PDF1" xml:space="preserve">
     <value>PDF Import</value>
   </data>
   <data name="input_option_scan" xml:space="preserve">
     <value>Document Scan</value>
   </data>
+  <data name="input_option_scan1" xml:space="preserve">
+    <value>Document Scan</value>
+  </data>
   <data name="invoiceId_hint" xml:space="preserve">
     <value>Invoice ID</value>
   </data>
+  <data name="invoiceId_hint1" xml:space="preserve">
+    <value>Invoice ID</value>
+  </data>
+  <data name="MultiPage" xml:space="preserve">
+    <value>MultiPage</value>
+  </data>
+  <data name="MultiPage_Description" xml:space="preserve">
+    <value>If true, scanning multi page documents is possible. Set this to false if you need to scan single page documents.</value>
+  </data>
   <data name="name1_hint" xml:space="preserve">
+    <value>Name 1</value>
+  </data>
+  <data name="name1_hint1" xml:space="preserve">
     <value>Name 1</value>
   </data>
   <data name="name2_hint" xml:space="preserve">
     <value>Name 1</value>
   </data>
+  <data name="name2_hint1" xml:space="preserve">
+    <value>Name 1</value>
+  </data>
   <data name="name3_hint" xml:space="preserve">
     <value>Name 1</value>
+  </data>
+  <data name="name3_hint1" xml:space="preserve">
+    <value>Name 1</value>
+  </data>
+  <data name="onSecondary" xml:space="preserve">
+    <value>On Secondary</value>
   </data>
   <data name="open_pdf" xml:space="preserve">
     <value>Open PDF</value>
   </data>
+  <data name="PageArrangementShowDeleteButton" xml:space="preserve">
+    <value>PageArrangementShowDeleteButton</value>
+  </data>
+  <data name="PageArrangementShowDeleteButton_Description" xml:space="preserve">
+    <value>If true, each item of the page arrangement functionality will show a delete button.</value>
+  </data>
+  <data name="PageArrangementShowPageNumber" xml:space="preserve">
+    <value>PageArrangementShowPageNumber</value>
+  </data>
+  <data name="PageArrangementShowPageNumber_Description" xml:space="preserve">
+    <value>If true, each item of the page arrangement functionality will show it's page number.</value>
+  </data>
   <data name="paymentState_hint" xml:space="preserve">
+    <value>Payment State</value>
+  </data>
+  <data name="paymentState_hint1" xml:space="preserve">
     <value>Payment State</value>
   </data>
   <data name="phone_hint" xml:space="preserve">
     <value>Phone</value>
   </data>
+  <data name="phone_hint1" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="PreCaptureFocus" xml:space="preserve">
+    <value>PreCaptureFocus</value>
+  </data>
+  <data name="PreCaptureFocus_Description" xml:space="preserve">
+    <value>If true, the camera will run a focus action right before taking the image. This improves the quality of the scanned images, but depending on the device, image capture might take a little bit longer. This applies only to Android.</value>
+  </data>
+  <data name="primary" xml:space="preserve">
+    <value>Primary</value>
+  </data>
   <data name="reference_hint" xml:space="preserve">
     <value>Reference</value>
   </data>
+  <data name="reference_hint1" xml:space="preserve">
+    <value>Reference</value>
+  </data>
+  <data name="scanButtonsForeground" xml:space="preserve">
+    <value>Scan buttons foreground</value>
+  </data>
+  <data name="scanButtonsLayoutBackground" xml:space="preserve">
+    <value>Scan buttons layout background</value>
+  </data>
+  <data name="scanPolygon" xml:space="preserve">
+    <value>Scan polygon</value>
+  </data>
+  <data name="scanSettings" xml:space="preserve">
+    <value>Scan settings</value>
+  </data>
+  <data name="scanSinglePages" xml:space="preserve">
+    <value>Scan single pages</value>
+  </data>
+  <data name="secondary" xml:space="preserve">
+    <value>Secondary</value>
+  </data>
+  <data name="settings" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="settingsDESC" xml:space="preserve">
+    <value>Configure color, scanner and editing of the SDK</value>
+  </data>
+  <data name="showDeleteButton" xml:space="preserve">
+    <value>Show delete button in page arrangement</value>
+  </data>
+  <data name="showPageArrangement" xml:space="preserve">
+    <value>Show page arrangement option</value>
+  </data>
+  <data name="showPageCropping" xml:space="preserve">
+    <value>Show page cropping option</value>
+  </data>
+  <data name="showPageFilter" xml:space="preserve">
+    <value>Show page filter option</value>
+  </data>
+  <data name="showPageNumber" xml:space="preserve">
+    <value>Show page number in page arrangement</value>
+  </data>
+  <data name="showPageRotaion" xml:space="preserve">
+    <value>Show page rotation option</value>
+  </data>
   <data name="street_hint" xml:space="preserve">
+    <value>Street</value>
+  </data>
+  <data name="street_hint1" xml:space="preserve">
     <value>Street</value>
   </data>
   <data name="text recognition" xml:space="preserve">
     <value>Text Recognition (OCR)</value>
   </data>
+  <data name="text recognition1" xml:space="preserve">
+    <value>Text Recognition (OCR)</value>
+  </data>
   <data name="textRecognitionDesc" xml:space="preserve">
+    <value>Run OCR on the previously scanned or imported (PDF or Image) document and get the recognized text.</value>
+  </data>
+  <data name="textRecognitionDesc1" xml:space="preserve">
     <value>Run OCR on the previously scanned or imported (PDF or Image) document and get the recognized text.</value>
   </data>
   <data name="title_import_option" xml:space="preserve">
     <value>First, scan or import a document</value>
   </data>
+  <data name="title_import_option1" xml:space="preserve">
+    <value>First, scan or import a document</value>
+  </data>
+  <data name="topBarBackground" xml:space="preserve">
+    <value>Top bar background</value>
+  </data>
+  <data name="topBarForeground" xml:space="preserve">
+    <value>Top bar foreground</value>
+  </data>
   <data name="zipcode_hint" xml:space="preserve">
+    <value>Zipcode</value>
+  </data>
+  <data name="zipcode_hint1" xml:space="preserve">
     <value>Zipcode</value>
   </data>
 </root>

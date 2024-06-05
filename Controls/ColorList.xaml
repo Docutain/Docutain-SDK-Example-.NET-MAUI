@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ViewCell
+    x:Class="Docutain_SDK_Example_.NET_MAUI.Controls.ColorList"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Docutain_SDK_Example_.NET_MAUI"
+    x:Name="this">
+    <Grid Padding="10" ColumnSpacing="10">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Label
+            Grid.Row="0"
+            Grid.Column="0"
+            FontAttributes="Bold"
+            FontSize="Body"
+            Text="{Binding Header, Mode =OneTime}" />
+
+        <Label
+            Grid.Row="1"
+            Grid.Column="0"
+            LineBreakMode="WordWrap"
+            Text="{Binding Description, Mode =OneTime}" />
+
+        <Grid
+            Grid.Row="0"
+            Grid.RowSpan="2"
+            Grid.Column="1">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Button
+                x:Name="bt_Light"
+                Grid.Row="0"
+                Grid.Column="0"
+                Margin="10,0,10,0"
+                BorderWidth="1"
+                Clicked="bt_Light_Clicked"
+                CornerRadius="20"
+                HeightRequest="40"
+                Text=""
+                WidthRequest="40" />
+
+            <Button
+                x:Name="bt_Dark"
+                Grid.Row="0"
+                Grid.Column="1"
+                BorderWidth="1"
+                Clicked="bt_Dark_Clicked"
+                CornerRadius="20"
+                HeightRequest="40"
+                Text=""
+                WidthRequest="40" />
+
+            <Label
+                Grid.Row="1"
+                Grid.Column="0"
+                FontSize="Default"
+                HorizontalTextAlignment="Center"
+                Text="Light" />
+
+            <Label
+                Grid.Row="1"
+                Grid.Column="1"
+                FontSize="Default"
+                HorizontalTextAlignment="Center"
+                LineBreakMode="WordWrap"
+                Text="Dark" />
+
+        </Grid>
+    </Grid>
+</ViewCell>

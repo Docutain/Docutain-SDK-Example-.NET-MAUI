@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ViewCell
+    x:Class="Docutain_SDK_Example_.NET_MAUI.Controls.SwitchList"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Docutain_SDK_Example_.NET_MAUI"
+    x:Name="this">
+    <Grid Padding="10" ColumnSpacing="10" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+
+        <Label
+            Grid.Row="0"
+            Grid.Column="0"
+            FontAttributes="Bold"
+            FontSize="Body"
+            Text="{Binding Header, Mode=OneTime}" />
+
+        <Label
+            Grid.Row="1"
+            Grid.Column="0"
+            LineBreakMode="WordWrap"
+            Text="{Binding Description, Mode=OneTime}" />
+
+        <Switch
+            x:Name="SettingsSwitch"
+            Grid.Row="0"
+            Grid.RowSpan="2"
+            Grid.Column="1"
+            IsToggled="{Binding IsToggled}"
+            Toggled="Switch_Toggled" />
+    </Grid>
+</ViewCell>

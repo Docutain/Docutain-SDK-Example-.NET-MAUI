@@ -61,11 +61,155 @@ namespace Docutain_SDK_Example_.NET_MAUI {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to AllowCaptureModeSetting.
+        /// </summary>
+        internal static string AllowCaptureModeSetting {
+            get {
+                return ResourceManager.GetString("AllowCaptureModeSetting", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to If true, the document scanner toolbar will display an item that allows the user to switch between automatic and manual camera triggering..
+        /// </summary>
+        internal static string AllowCaptureModeSetting_Description {
+            get {
+                return ResourceManager.GetString("AllowCaptureModeSetting_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AllowPageArrangement.
+        /// </summary>
+        internal static string AllowPageArrangement {
+            get {
+                return ResourceManager.GetString("AllowPageArrangement", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to If false, the bottom toolbar will hide the arrange page item..
+        /// </summary>
+        internal static string AllowPageArrangement_Description {
+            get {
+                return ResourceManager.GetString("AllowPageArrangement_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AllowPageCropping.
+        /// </summary>
+        internal static string AllowPageCropping {
+            get {
+                return ResourceManager.GetString("AllowPageCropping", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to If false, the bottom toolbar will hide the page cropping item..
+        /// </summary>
+        internal static string AllowPageCropping_Description {
+            get {
+                return ResourceManager.GetString("AllowPageCropping_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AllowPageFilter.
+        /// </summary>
+        internal static string AllowPageFilter {
+            get {
+                return ResourceManager.GetString("AllowPageFilter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to If false, the bottom toolbar will hide the filter page item..
+        /// </summary>
+        internal static string AllowPageFilter_Description {
+            get {
+                return ResourceManager.GetString("AllowPageFilter_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AllowPageRotation.
+        /// </summary>
+        internal static string AllowPageRotation {
+            get {
+                return ResourceManager.GetString("AllowPageRotation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to If false, the bottom toolbar will hide the rotate page item..
+        /// </summary>
+        internal static string AllowPageRotation_Description {
+            get {
+                return ResourceManager.GetString("AllowPageRotation_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Amount.
         /// </summary>
         internal static string amount_hint {
             get {
                 return ResourceManager.GetString("amount_hint", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Amount.
+        /// </summary>
+        internal static string amount_hint1 {
+            get {
+                return ResourceManager.GetString("amount_hint1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AutoCapture.
+        /// </summary>
+        internal static string AutoCapture {
+            get {
+                return ResourceManager.GetString("AutoCapture", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to If true, the camera will capture the image automatically at the right moment..
+        /// </summary>
+        internal static string AutoCapture_Description {
+            get {
+                return ResourceManager.GetString("AutoCapture_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AutoCrop.
+        /// </summary>
+        internal static string AutoCrop {
+            get {
+                return ResourceManager.GetString("AutoCrop", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to If true, image gets automatically cropped if document was detected. This applies only when importing images..
+        /// </summary>
+        internal static string AutoCrop_Description {
+            get {
+                return ResourceManager.GetString("AutoCrop_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Automatic capture.
+        /// </summary>
+        internal static string automaticCapture {
+            get {
+                return ResourceManager.GetString("automaticCapture", resourceCulture);
             }
         }
         
@@ -79,11 +223,245 @@ namespace Docutain_SDK_Example_.NET_MAUI {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to BIC.
+        /// </summary>
+        internal static string BIC_hint1 {
+            get {
+                return ResourceManager.GetString("BIC_hint1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bottom bar background.
+        /// </summary>
+        internal static string bottomBarBackground {
+            get {
+                return ResourceManager.GetString("bottomBarBackground", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bottom bar foreground.
+        /// </summary>
+        internal static string bottomBarForeground {
+            get {
+                return ResourceManager.GetString("bottomBarForeground", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to City.
         /// </summary>
         internal static string city_hint {
             get {
                 return ResourceManager.GetString("city_hint", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to City.
+        /// </summary>
+        internal static string city_hint1 {
+            get {
+                return ResourceManager.GetString("city_hint1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ColorBottomBarBackground.
+        /// </summary>
+        internal static string ColorBottomBarBackground {
+            get {
+                return ResourceManager.GetString("ColorBottomBarBackground", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Used to tint the bottom toolbar background of the image editing page..
+        /// </summary>
+        internal static string ColorBottomBarBackground_Description {
+            get {
+                return ResourceManager.GetString("ColorBottomBarBackground_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ColorBottomBarForeground.
+        /// </summary>
+        internal static string ColorBottomBarForeground {
+            get {
+                return ResourceManager.GetString("ColorBottomBarForeground", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Used to tint the buttons within the bottom toolbar of the image editing page..
+        /// </summary>
+        internal static string ColorBottomBarForeground_Description {
+            get {
+                return ResourceManager.GetString("ColorBottomBarForeground_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ColorOnSecondary.
+        /// </summary>
+        internal static string ColorOnSecondary {
+            get {
+                return ResourceManager.GetString("ColorOnSecondary", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Used to tint elements that reside on ColorSecondary, like the icon of the capture button..
+        /// </summary>
+        internal static string ColorOnSecondary_Description {
+            get {
+                return ResourceManager.GetString("ColorOnSecondary_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ColorPrimary.
+        /// </summary>
+        internal static string ColorPrimary {
+            get {
+                return ResourceManager.GetString("ColorPrimary", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Used to tint progress indicators and dialog buttons..
+        /// </summary>
+        internal static string ColorPrimary_Description {
+            get {
+                return ResourceManager.GetString("ColorPrimary_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ColorScanButtonsForeground.
+        /// </summary>
+        internal static string ColorScanButtonsForeground {
+            get {
+                return ResourceManager.GetString("ColorScanButtonsForeground", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Used to tint the foreground of the buttons of the scan layout, like the torch button..
+        /// </summary>
+        internal static string ColorScanButtonsForeground_Description {
+            get {
+                return ResourceManager.GetString("ColorScanButtonsForeground_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ColorScanButtonsLayoutBackground.
+        /// </summary>
+        internal static string ColorScanButtonsLayoutBackground {
+            get {
+                return ResourceManager.GetString("ColorScanButtonsLayoutBackground", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Used to tint the background of the layout containing the buttons of the scan layout, like the capture button or torch button..
+        /// </summary>
+        internal static string ColorScanButtonsLayoutBackground_Description {
+            get {
+                return ResourceManager.GetString("ColorScanButtonsLayoutBackground_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ColorScanPolygon.
+        /// </summary>
+        internal static string ColorScanPolygon {
+            get {
+                return ResourceManager.GetString("ColorScanPolygon", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Used to tint the polygon overlay which highlights the currently detected document..
+        /// </summary>
+        internal static string ColorScanPolygon_Description {
+            get {
+                return ResourceManager.GetString("ColorScanPolygon_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ColorSecondary.
+        /// </summary>
+        internal static string ColorSecondary {
+            get {
+                return ResourceManager.GetString("ColorSecondary", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Used to tint selectable controls and the capture button..
+        /// </summary>
+        internal static string ColorSecondary_Description {
+            get {
+                return ResourceManager.GetString("ColorSecondary_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Color settings.
+        /// </summary>
+        internal static string colorSettings {
+            get {
+                return ResourceManager.GetString("colorSettings", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ColorTopBarBackground.
+        /// </summary>
+        internal static string ColorTopBarBackground {
+            get {
+                return ResourceManager.GetString("ColorTopBarBackground", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Used to tint the top toolbar background..
+        /// </summary>
+        internal static string ColorTopBarBackground_Description {
+            get {
+                return ResourceManager.GetString("ColorTopBarBackground_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ColorTopBarForeground.
+        /// </summary>
+        internal static string ColorTopBarForeground {
+            get {
+                return ResourceManager.GetString("ColorTopBarForeground", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Used to tint the elements contained in the top toolbar, like buttons and titles..
+        /// </summary>
+        internal static string ColorTopBarForeground_Description {
+            get {
+                return ResourceManager.GetString("ColorTopBarForeground_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Crop imported images.
+        /// </summary>
+        internal static string cropImportedImages {
+            get {
+                return ResourceManager.GetString("cropImportedImages", resourceCulture);
             }
         }
         
@@ -97,11 +475,29 @@ namespace Docutain_SDK_Example_.NET_MAUI {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Customer ID.
+        /// </summary>
+        internal static string customerId_hint1 {
+            get {
+                return ResourceManager.GetString("customerId_hint1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Data Extraction.
         /// </summary>
         internal static string data_extraction {
             get {
                 return ResourceManager.GetString("data extraction", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Data Extraction.
+        /// </summary>
+        internal static string data_extraction1 {
+            get {
+                return ResourceManager.GetString("data extraction1", resourceCulture);
             }
         }
         
@@ -115,11 +511,47 @@ namespace Docutain_SDK_Example_.NET_MAUI {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Extract data, e.g. invoice data, from a previously scanned or imported (PDF or Image) document..
+        /// </summary>
+        internal static string dataExtractDesc1 {
+            get {
+                return ResourceManager.GetString("dataExtractDesc1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Date.
         /// </summary>
         internal static string date_hint {
             get {
                 return ResourceManager.GetString("date_hint", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Date.
+        /// </summary>
+        internal static string date_hint1 {
+            get {
+                return ResourceManager.GetString("date_hint1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to DefaultScanFilter.
+        /// </summary>
+        internal static string DefaultScanFilter {
+            get {
+                return ResourceManager.GetString("DefaultScanFilter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The default scan filter that will be used after scan..
+        /// </summary>
+        internal static string DefaultScanFilter_Description {
+            get {
+                return ResourceManager.GetString("DefaultScanFilter_Description", resourceCulture);
             }
         }
         
@@ -133,11 +565,38 @@ namespace Docutain_SDK_Example_.NET_MAUI {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Starts the document scanner which provides automatic scanning of paper documents..
+        /// </summary>
+        internal static string docScannerDesc1 {
+            get {
+                return ResourceManager.GetString("docScannerDesc1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Document Scanner.
         /// </summary>
         internal static string document_scanner {
             get {
                 return ResourceManager.GetString("document scanner", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Document Scanner.
+        /// </summary>
+        internal static string document_scanner1 {
+            get {
+                return ResourceManager.GetString("document scanner1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Edit settings.
+        /// </summary>
+        internal static string editSettings {
+            get {
+                return ResourceManager.GetString("editSettings", resourceCulture);
             }
         }
         
@@ -151,11 +610,29 @@ namespace Docutain_SDK_Example_.NET_MAUI {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Generate PDF Document.
+        /// </summary>
+        internal static string generate_pdf1 {
+            get {
+                return ResourceManager.GetString("generate pdf1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Generate a searchable (includes recognized text) PDF document out of the scanned pages or imported image..
         /// </summary>
         internal static string generatePDFDesc {
             get {
                 return ResourceManager.GetString("generatePDFDesc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Generate a searchable (includes recognized text) PDF document out of the scanned pages or imported image..
+        /// </summary>
+        internal static string generatePDFDesc1 {
+            get {
+                return ResourceManager.GetString("generatePDFDesc1", resourceCulture);
             }
         }
         
@@ -169,11 +646,29 @@ namespace Docutain_SDK_Example_.NET_MAUI {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to IBAN.
+        /// </summary>
+        internal static string IBAN_hint1 {
+            get {
+                return ResourceManager.GetString("IBAN_hint1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Image Import.
         /// </summary>
         internal static string input_option_image {
             get {
                 return ResourceManager.GetString("input_option_image", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Image Import.
+        /// </summary>
+        internal static string input_option_image1 {
+            get {
+                return ResourceManager.GetString("input_option_image1", resourceCulture);
             }
         }
         
@@ -187,6 +682,15 @@ namespace Docutain_SDK_Example_.NET_MAUI {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to PDF Import.
+        /// </summary>
+        internal static string input_option_PDF1 {
+            get {
+                return ResourceManager.GetString("input_option_PDF1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Document Scan.
         /// </summary>
         internal static string input_option_scan {
@@ -196,11 +700,47 @@ namespace Docutain_SDK_Example_.NET_MAUI {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Document Scan.
+        /// </summary>
+        internal static string input_option_scan1 {
+            get {
+                return ResourceManager.GetString("input_option_scan1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Invoice ID.
         /// </summary>
         internal static string invoiceId_hint {
             get {
                 return ResourceManager.GetString("invoiceId_hint", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Invoice ID.
+        /// </summary>
+        internal static string invoiceId_hint1 {
+            get {
+                return ResourceManager.GetString("invoiceId_hint1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MultiPage.
+        /// </summary>
+        internal static string MultiPage {
+            get {
+                return ResourceManager.GetString("MultiPage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to If true, scanning multi page documents is possible. Set this to false if you need to scan single page documents..
+        /// </summary>
+        internal static string MultiPage_Description {
+            get {
+                return ResourceManager.GetString("MultiPage_Description", resourceCulture);
             }
         }
         
@@ -216,9 +756,27 @@ namespace Docutain_SDK_Example_.NET_MAUI {
         /// <summary>
         ///   Looks up a localized string similar to Name 1.
         /// </summary>
+        internal static string name1_hint1 {
+            get {
+                return ResourceManager.GetString("name1_hint1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Name 1.
+        /// </summary>
         internal static string name2_hint {
             get {
                 return ResourceManager.GetString("name2_hint", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Name 1.
+        /// </summary>
+        internal static string name2_hint1 {
+            get {
+                return ResourceManager.GetString("name2_hint1", resourceCulture);
             }
         }
         
@@ -232,11 +790,65 @@ namespace Docutain_SDK_Example_.NET_MAUI {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Name 1.
+        /// </summary>
+        internal static string name3_hint1 {
+            get {
+                return ResourceManager.GetString("name3_hint1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to On Secondary.
+        /// </summary>
+        internal static string onSecondary {
+            get {
+                return ResourceManager.GetString("onSecondary", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Open PDF.
         /// </summary>
         internal static string open_pdf {
             get {
                 return ResourceManager.GetString("open_pdf", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to PageArrangementShowDeleteButton.
+        /// </summary>
+        internal static string PageArrangementShowDeleteButton {
+            get {
+                return ResourceManager.GetString("PageArrangementShowDeleteButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to If true, each item of the page arrangement functionality will show a delete button..
+        /// </summary>
+        internal static string PageArrangementShowDeleteButton_Description {
+            get {
+                return ResourceManager.GetString("PageArrangementShowDeleteButton_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to PageArrangementShowPageNumber.
+        /// </summary>
+        internal static string PageArrangementShowPageNumber {
+            get {
+                return ResourceManager.GetString("PageArrangementShowPageNumber", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to If true, each item of the page arrangement functionality will show it&apos;s page number..
+        /// </summary>
+        internal static string PageArrangementShowPageNumber_Description {
+            get {
+                return ResourceManager.GetString("PageArrangementShowPageNumber_Description", resourceCulture);
             }
         }
         
@@ -250,11 +862,56 @@ namespace Docutain_SDK_Example_.NET_MAUI {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Payment State.
+        /// </summary>
+        internal static string paymentState_hint1 {
+            get {
+                return ResourceManager.GetString("paymentState_hint1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Phone.
         /// </summary>
         internal static string phone_hint {
             get {
                 return ResourceManager.GetString("phone_hint", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Phone.
+        /// </summary>
+        internal static string phone_hint1 {
+            get {
+                return ResourceManager.GetString("phone_hint1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to PreCaptureFocus.
+        /// </summary>
+        internal static string PreCaptureFocus {
+            get {
+                return ResourceManager.GetString("PreCaptureFocus", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to If true, the camera will run a focus action right before taking the image. This improves the quality of the scanned images, but depending on the device, image capture might take a little bit longer. This applies only to Android..
+        /// </summary>
+        internal static string PreCaptureFocus_Description {
+            get {
+                return ResourceManager.GetString("PreCaptureFocus_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Primary.
+        /// </summary>
+        internal static string primary {
+            get {
+                return ResourceManager.GetString("primary", resourceCulture);
             }
         }
         
@@ -268,11 +925,155 @@ namespace Docutain_SDK_Example_.NET_MAUI {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Reference.
+        /// </summary>
+        internal static string reference_hint1 {
+            get {
+                return ResourceManager.GetString("reference_hint1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Scan buttons foreground.
+        /// </summary>
+        internal static string scanButtonsForeground {
+            get {
+                return ResourceManager.GetString("scanButtonsForeground", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Scan buttons layout background.
+        /// </summary>
+        internal static string scanButtonsLayoutBackground {
+            get {
+                return ResourceManager.GetString("scanButtonsLayoutBackground", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Scan polygon.
+        /// </summary>
+        internal static string scanPolygon {
+            get {
+                return ResourceManager.GetString("scanPolygon", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Scan settings.
+        /// </summary>
+        internal static string scanSettings {
+            get {
+                return ResourceManager.GetString("scanSettings", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Scan single pages.
+        /// </summary>
+        internal static string scanSinglePages {
+            get {
+                return ResourceManager.GetString("scanSinglePages", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Secondary.
+        /// </summary>
+        internal static string secondary {
+            get {
+                return ResourceManager.GetString("secondary", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Settings.
+        /// </summary>
+        internal static string settings {
+            get {
+                return ResourceManager.GetString("settings", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Configure color, scanner and editing of the SDK.
+        /// </summary>
+        internal static string settingsDESC {
+            get {
+                return ResourceManager.GetString("settingsDESC", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Show delete button in page arrangement.
+        /// </summary>
+        internal static string showDeleteButton {
+            get {
+                return ResourceManager.GetString("showDeleteButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Show page arrangement option.
+        /// </summary>
+        internal static string showPageArrangement {
+            get {
+                return ResourceManager.GetString("showPageArrangement", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Show page cropping option.
+        /// </summary>
+        internal static string showPageCropping {
+            get {
+                return ResourceManager.GetString("showPageCropping", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Show page filter option.
+        /// </summary>
+        internal static string showPageFilter {
+            get {
+                return ResourceManager.GetString("showPageFilter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Show page number in page arrangement.
+        /// </summary>
+        internal static string showPageNumber {
+            get {
+                return ResourceManager.GetString("showPageNumber", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Show page rotation option.
+        /// </summary>
+        internal static string showPageRotaion {
+            get {
+                return ResourceManager.GetString("showPageRotaion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Street.
         /// </summary>
         internal static string street_hint {
             get {
                 return ResourceManager.GetString("street_hint", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Street.
+        /// </summary>
+        internal static string street_hint1 {
+            get {
+                return ResourceManager.GetString("street_hint1", resourceCulture);
             }
         }
         
@@ -286,11 +1087,29 @@ namespace Docutain_SDK_Example_.NET_MAUI {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Text Recognition (OCR).
+        /// </summary>
+        internal static string text_recognition1 {
+            get {
+                return ResourceManager.GetString("text recognition1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Run OCR on the previously scanned or imported (PDF or Image) document and get the recognized text..
         /// </summary>
         internal static string textRecognitionDesc {
             get {
                 return ResourceManager.GetString("textRecognitionDesc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Run OCR on the previously scanned or imported (PDF or Image) document and get the recognized text..
+        /// </summary>
+        internal static string textRecognitionDesc1 {
+            get {
+                return ResourceManager.GetString("textRecognitionDesc1", resourceCulture);
             }
         }
         
@@ -304,11 +1123,47 @@ namespace Docutain_SDK_Example_.NET_MAUI {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to First, scan or import a document.
+        /// </summary>
+        internal static string title_import_option1 {
+            get {
+                return ResourceManager.GetString("title_import_option1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Top bar background.
+        /// </summary>
+        internal static string topBarBackground {
+            get {
+                return ResourceManager.GetString("topBarBackground", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Top bar foreground.
+        /// </summary>
+        internal static string topBarForeground {
+            get {
+                return ResourceManager.GetString("topBarForeground", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Zipcode.
         /// </summary>
         internal static string zipcode_hint {
             get {
                 return ResourceManager.GetString("zipcode_hint", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Zipcode.
+        /// </summary>
+        internal static string zipcode_hint1 {
+            get {
+                return ResourceManager.GetString("zipcode_hint1", resourceCulture);
             }
         }
     }

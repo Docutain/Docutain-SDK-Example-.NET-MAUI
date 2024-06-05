@@ -45,6 +45,13 @@ public partial class MainPage : ContentPage
             ImgSrc = "picture_as_pdf_",
             TapAction = () => { GeneratePDF(); }
         });
+        lv_Actions_Source.Add(new TestItem
+        {
+            Header = AppResources.settings,
+            Description = AppResources.settingsDESC,
+            ImgSrc = "settings_",
+            TapAction = () => { Settings(); }
+        });
     }
 
     private async void GeneratePDF()
@@ -79,12 +86,12 @@ public partial class MainPage : ContentPage
                 return;
             }
 
-            Device.BeginInvokeOnMainThread(() =>
+            MainThread.BeginInvokeOnMainThread(() =>
             {
                 // Display the PDF by using the system's default viewer for demonstration purposes.
                 Launcher.OpenAsync(new OpenFileRequest
                 {
-                    File = new ReadOnlyFile(pdfFile)
+                    File = new ReadOnlyFile(pdfFile)                    
                 });
             });
         });
@@ -122,6 +129,11 @@ public partial class MainPage : ContentPage
         await Navigation.PushAsync(new TextResultPage(result.File));
     }
 
+    private async void Settings()
+    {
+        await Navigation.PushAsync(new SettingsPage());
+    }
+
     private async Task<(FileResult File, bool Canceled)> GetProcessingInput()
     {
         string action = await DisplayActionSheet(AppResources.title_import_option, "Cancel", null,
@@ -133,13 +145,13 @@ public partial class MainPage : ContentPage
             return (null, true);
         if (action == AppResources.input_option_scan)
         {
-            await StartScan();
-            return (null, false);
+            var result = await StartScan();
+            return (null, !result);
         }
         else if (action == AppResources.input_option_image)
         {
-            var result = await PickAndShow(FilePickerFileType.Images);
-            return (result, result == null ? true : false);
+            var result = await StartScan(true);
+            return (null, !result);
         }
         else if (action == AppResources.input_option_PDF)
         {
@@ -149,17 +161,65 @@ public partial class MainPage : ContentPage
         return (null, true);
     }
 
-    private async Task<bool> StartScan()
+    private async Task<bool> StartScan(bool imageImport = false)
     {
-        // Define a DocumentScannerConfiguration to alter the scan process and define a custom theme to match your branding
+        //There are a lot of settings to configure the scanner to match your specific needs
+        //Check out the documentation to learn more https://docs.docutain.com/docs/MAUI/docScan#change-default-scan-behaviour
         var scanConfig = new DocumentScannerConfiguration();
-        scanConfig.AllowCaptureModeSetting = true; // defaults to false
-        scanConfig.PageEditConfig.AllowPageFilter = true; // defaults to true
-        scanConfig.PageEditConfig.AllowPageRotation = true; // defaults to true
+
+        if (imageImport)
+            scanConfig.Source = Source.GalleryMultiple;
+
+        //In this sample app we provide a settings page which the user can use to alter the scan settings
+        //The settings are stored in and read from SharedPreferences
+        //This is supposed to be just an example, you do not need to implement it in that exact way
+        //If you do not want to provide your users the possibility to alter the settings themselves at all
+        //You can just set the settings according to the apps needs
+
+        //set edit settings
+        scanConfig.PageEditConfig.AllowPageFilter = DocutainPreferences.Get(DocutainPreferences.EditSettings.AllowPageFilter);
+        scanConfig.PageEditConfig.AllowPageRotation = DocutainPreferences.Get(DocutainPreferences.EditSettings.AllowPageRotation);
+        scanConfig.PageEditConfig.AllowPageArrangement = DocutainPreferences.Get(DocutainPreferences.EditSettings.AllowPageArrangement);
+        scanConfig.PageEditConfig.AllowPageCropping = DocutainPreferences.Get(DocutainPreferences.EditSettings.AllowPageCropping);
+        scanConfig.PageEditConfig.PageArrangementShowDeleteButton = DocutainPreferences.Get(DocutainPreferences.EditSettings.PageArrangementShowDeleteButton);
+        scanConfig.PageEditConfig.PageArrangementShowPageNumber = DocutainPreferences.Get(DocutainPreferences.EditSettings.PageArrangementShowPageNumber);
+
+        //set scan settings
+        scanConfig.AllowCaptureModeSetting = DocutainPreferences.Get(DocutainPreferences.ScanSettings.AllowCaptureModeSetting);
+        scanConfig.AutoCapture = DocutainPreferences.Get(DocutainPreferences.ScanSettings.AutoCapture);
+        scanConfig.AutoCrop = DocutainPreferences.Get(DocutainPreferences.ScanSettings.AutoCrop);
+        scanConfig.MultiPage = DocutainPreferences.Get(DocutainPreferences.ScanSettings.MultiPage);
+        scanConfig.PreCaptureFocus = DocutainPreferences.Get(DocutainPreferences.ScanSettings.PreCaptureFocus);
+        scanConfig.DefaultScanFilter = (ScanFilter)(DocutainPreferences.GetInteger(DocutainPreferences.ScanSettings.DefaultScanFilter));
+
+        //set color settings
+        var ColorPrimary = DocutainPreferences.Get(DocutainPreferences.ColorSettings.ColorPrimary);
+        scanConfig.ColorConfig.ColorPrimary = (ColorPrimary.Item1, ColorPrimary.Item2);
+        var ColorSecondary = DocutainPreferences.Get(DocutainPreferences.ColorSettings.ColorSecondary);
+        scanConfig.ColorConfig.ColorSecondary = (ColorSecondary.Item1, ColorSecondary.Item2);
+        var ColorOnSecondary = DocutainPreferences.Get(DocutainPreferences.ColorSettings.ColorOnSecondary);
+        scanConfig.ColorConfig.ColorOnSecondary = (ColorOnSecondary.Item1, ColorOnSecondary.Item2);
+        var ColorScanButtonsLayoutBackground = DocutainPreferences.Get(DocutainPreferences.ColorSettings.ColorScanButtonsLayoutBackground);
+        scanConfig.ColorConfig.ColorScanButtonsLayoutBackground = (ColorScanButtonsLayoutBackground.Item1, ColorScanButtonsLayoutBackground.Item2);
+        var ColorScanButtonsForeground = DocutainPreferences.Get(DocutainPreferences.ColorSettings.ColorScanButtonsForeground);
+        scanConfig.ColorConfig.ColorScanButtonsForeground = (ColorScanButtonsForeground.Item1, ColorScanButtonsForeground.Item2);
+        var ColorScanPolygon = DocutainPreferences.Get(DocutainPreferences.ColorSettings.ColorScanPolygon);
+        scanConfig.ColorConfig.ColorScanPolygon = (ColorScanPolygon.Item1, ColorScanPolygon.Item2);
+        var ColorBottomBarBackground = DocutainPreferences.Get(DocutainPreferences.ColorSettings.ColorBottomBarBackground);
+        scanConfig.ColorConfig.ColorBottomBarBackground = (ColorBottomBarBackground.Item1, ColorBottomBarBackground.Item2);
+        var ColorBottomBarForeground = DocutainPreferences.Get(DocutainPreferences.ColorSettings.ColorBottomBarForeground);
+        scanConfig.ColorConfig.ColorBottomBarForeground = (ColorBottomBarForeground.Item1, ColorBottomBarForeground.Item2);
+        var ColorTopBarBackground = DocutainPreferences.Get(DocutainPreferences.ColorSettings.ColorTopBarBackground);
+        scanConfig.ColorConfig.ColorTopBarBackground = (ColorTopBarBackground.Item1, ColorTopBarBackground.Item2);
+        var ColorTopBarForeground = DocutainPreferences.Get(DocutainPreferences.ColorSettings.ColorTopBarForeground);
+        scanConfig.ColorConfig.ColorTopBarForeground = (ColorTopBarForeground.Item1, ColorTopBarForeground.Item2);
+
         // alter the onboarding image source if you like
         //scanConfig.OnboardingImageSource = ...
 
-        // detailed information about theming possibilities can be found here: https://docs.docutain.com/docs/Xamarin/theming
+        // detailed information about theming possibilities can be found here: https://docs.docutain.com/docs/MAUI/theming
+
+        //start the scanner using the provided config
         return await UI.ScanDocument(scanConfig);
     }
 

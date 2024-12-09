@@ -91,7 +91,7 @@ public partial class MainPage : ContentPage
                 // Display the PDF by using the system's default viewer for demonstration purposes.
                 Launcher.OpenAsync(new OpenFileRequest
                 {
-                    File = new ReadOnlyFile(pdfFile)                    
+                    File = new ReadOnlyFile(pdfFile)
                 });
             });
         });
@@ -138,8 +138,9 @@ public partial class MainPage : ContentPage
     {
         string action = await DisplayActionSheet(AppResources.title_import_option, "Cancel", null,
             AppResources.input_option_scan,
-            AppResources.input_option_PDF,
-            AppResources.input_option_image);
+            AppResources.input_option_gallery,
+            AppResources.input_option_image,
+            AppResources.input_option_PDF);
 
         if (action == "Cancel")
             return (null, true);
@@ -148,10 +149,15 @@ public partial class MainPage : ContentPage
             var result = await StartScan();
             return (null, !result);
         }
-        else if (action == AppResources.input_option_image)
+        else if (action == AppResources.input_option_gallery)
         {
             var result = await StartScan(true);
             return (null, !result);
+        }
+        else if (action == AppResources.input_option_image)
+        {
+            var result = await PickAndShow(FilePickerFileType.Images);
+            return (result, result == null ? true : false);
         }
         else if (action == AppResources.input_option_PDF)
         {
@@ -216,8 +222,6 @@ public partial class MainPage : ContentPage
 
         // alter the onboarding image source if you like
         //scanConfig.OnboardingImageSource = ...
-
-        // detailed information about theming possibilities can be found here: https://docs.docutain.com/docs/MAUI/theming
 
         //start the scanner using the provided config
         return await UI.ScanDocument(scanConfig);

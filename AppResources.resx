@@ -315,6 +315,9 @@
   <data name="IBAN_hint1" xml:space="preserve">
     <value>IBAN</value>
   </data>
+  <data name="input_option_gallery" xml:space="preserve">
+    <value>Document Scan Gallery</value>
+  </data>
   <data name="input_option_image" xml:space="preserve">
     <value>Image Import</value>
   </data>
@@ -328,7 +331,7 @@
     <value>PDF Import</value>
   </data>
   <data name="input_option_scan" xml:space="preserve">
-    <value>Document Scan</value>
+    <value>Document Scan Camera</value>
   </data>
   <data name="input_option_scan1" xml:space="preserve">
     <value>Document Scan</value>

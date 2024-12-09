@@ -1,3 +1,4 @@
+using Docutain;
 using static Docutain_SDK_Example_.NET_MAUI.DocutainPreferences;
 
 namespace Docutain_SDK_Example_.NET_MAUI.Controls;
@@ -28,7 +29,10 @@ public partial class ColorList : ViewCell
 
     async void bt_Light_Clicked(object sender, EventArgs args)
     {
-        var color = await DocutainColorPicker.DocutainColorPicker.PickColor((sender as Button).BackgroundColor);
+        var color = await ColorPicker.PickColor(new ColorPickerConfig
+        {
+            DefaultColor = (sender as Button).BackgroundColor
+        });
 
         if (color == null)
             return;
@@ -39,7 +43,10 @@ public partial class ColorList : ViewCell
 
     async void bt_Dark_Clicked(object sender, EventArgs args)
     {
-        var color = await DocutainColorPicker.DocutainColorPicker.PickColor((sender as Button).BackgroundColor);
+        var color = await ColorPicker.PickColor(new ColorPickerConfig
+        {
+            DefaultColor = (sender as Button).BackgroundColor
+        });
 
         if (color == null)
             return;
@@ -50,7 +57,7 @@ public partial class ColorList : ViewCell
 
     public void Reload()
     {
-        Tuple<Color,Color> tuple = DocutainPreferences.Get(_Settings);
+        Tuple<Color, Color> tuple = DocutainPreferences.Get(_Settings);
         bt_Light.BackgroundColor = tuple.Item1;
         bt_Dark.BackgroundColor = tuple.Item2;
     }
